@@ -12,3 +12,39 @@ Este é um projeto Node.js que oferece funcionalidades para gerenciar tarefas e 
   
   ```bash
   npm install
+  
+# Endpoints da API
+## Tarefas
+### POST /tarefas - Cria uma nova tarefa:
+{
+  "titulo": "Título da Tarefa",
+  "descricao": "Descrição da Tarefa"
+}
+### GET /tarefas - Lista todas as tarefas cadastradas.
+
+### PUT /tarefas/:id - Atualiza uma tarefa existente:
+{
+  "titulo": "Novo Título",
+  "descricao": "Nova Descrição"
+}
+### DELETE /tarefas/:id - Exclui uma tarefa pelo ID.
+
+## Usuários
+
+### POST /usuarios - Cria um novo usuário:
+
+{
+  "nome": "Nome do Usuário",
+  "email": "email@exemplo.com",
+  "senha": "senha_segura"
+}
+### GET /usuarios - Lista todos os usuários cadastrados.
+
+### PUT /usuarios/:id - Atualiza um usuário existente:
+
+{
+  "nome": "Novo Nome",
+  "email": "novo_email@exemplo.com",
+  "senha": "nova_senha_segura"
+}
+### DELETE /usuarios/:id - Exclui um usuário pelo ID.
